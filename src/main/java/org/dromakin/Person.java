@@ -1,0 +1,60 @@
+/*
+ * File:     Person
+ * Package:  org.dromakin
+ * Project:  netology_stream_api_homework_2
+ *
+ * Created by dromakin as 09.01.2023
+ *
+ * author - dromakin
+ * maintainer - dromakin
+ * version - 2023.01.09
+ */
+
+package org.dromakin;
+
+public class Person {
+    private final String name;
+    private final String family;
+    private final Integer age;
+    private final Sex sex;
+    private final Education education;
+
+    public Person(String name, String family, int age, Sex sex, Education education) {
+        this.name = name;
+        this.family = family;
+        this.age = age;
+        this.sex = sex;
+        this.education = education;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getFamily() {
+        return family;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+
+    public Education getEducation() {
+        return education;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", family='" + family + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", education=" + education +
+                '}';
+    }
+}
